@@ -2,7 +2,7 @@ import Graph from "./graph.js";
 
 const stepsReport = document.querySelector('p.p-data');
 // DFS 
-export const DFS = (grid, startRow, startCol, graph) => {
+export const DFS = async (grid, startRow, startCol, graph) => {
     graph.disableAllButtons(); // Disable buttons before DFS traversal
     const stack = [[startRow, startCol, 0]];
     const visited = new Set([startRow + ',' + startCol]);
@@ -35,6 +35,8 @@ export const DFS = (grid, startRow, startCol, graph) => {
                         stack.push([neighborRow, neighborCol, distance + 1]);
                         visited.add(neighborPos);
                         prev[neighborPos] = [row, col];
+                        await new Promise((resolve) => setTimeout(resolve, 100));
+                        this.updateCellDfs(row, col, i);
                     }
                 }
             }
