@@ -17,6 +17,20 @@ body {
     background-color: #bde0fe; /* background color */
     font-size: calc(16px + 0.4vmax);
 }
+.DarkMode {
+    background-color: black;
+    color: whitesmoke
+}
+button.DarkMode {
+    background-color: #ffc8dd;
+    color: black
+
+}
+button.DarkMode:hover {
+    cursor: pointer;
+    background-color: black; /* hover color */
+    color: whitesmoke;
+}
 
 nav.navigation {
     padding: 1rem;

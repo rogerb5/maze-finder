@@ -11,6 +11,7 @@ const bfsButton = document.querySelector('button.bfs-button');
 const aboutButton = document.querySelector('button.about');
 const aboutSection = document.querySelector('section.about');
 const closeButton = document.querySelector('button.close');
+const darkModeButton = document.querySelector('button.DarkMode');
 
 // use other graphs found in graphs.txt to create different sizes of grid
 const defaultGrid = [
@@ -53,6 +54,10 @@ closeButton.addEventListener("click", () => {
 
 aboutButton.addEventListener("click", () => {
     aboutSection.classList.add('active');
+});
+darkModeButton.addEventListener("click", () => {
+    document.body.classList.toggle('DarkMode');
+    console.log('Dark Mode Toggled');
 });
 
 bfsButton.addEventListener("click", () => {
