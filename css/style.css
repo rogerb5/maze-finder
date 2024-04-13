@@ -14,7 +14,7 @@
 html,
 body {
     line-height: 1.4;
-    background-color: hsl(212, 33%, 89%);
+    background-color: #bde0fe; /* background color */
     font-size: calc(16px + 0.4vmax);
 }
 
@@ -28,7 +28,7 @@ nav.navigation {
 
 button {
     padding: 0.8vmin 1.2vmin 0.8vmin 1.2vmin;
-    background-color: whitesmoke;
+    background-color: #ffc8dd;
     border: 2px solid #333;
     font-size: 1rem;
     transition: background-color 300ms ease;
@@ -41,12 +41,11 @@ button.active {
 
 button:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: black; /* hover color */
     color: whitesmoke;
 }
 
 section.main-section {
-    background-color: hsl(212, 33%, 89%);
     display: flex;
     justify-content: center;
     align-items: flex-start;

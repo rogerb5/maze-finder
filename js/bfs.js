@@ -11,11 +11,11 @@ export const BFS = async (grid, startRow, startCol, graph) => {
     while (queue.length > 0) {
         const [row, col, distance] = queue.shift();
         if (grid[row][col] === 'C') {
-            graph.cells[row * graph.gridDimension + col].style.backgroundColor = "#B7245C";
+            graph.cells[row * graph.gridDimension + col].style.backgroundColor = "#ff5c98";
             let currentNode = row + ',' + col;
             while (prev[currentNode] !== undefined) {
                 const [prevRow, prevCol] = prev[currentNode];
-                graph.cells[prevRow * graph.gridDimension + prevCol].style.backgroundColor = "#B7245C";
+                graph.cells[prevRow * graph.gridDimension + prevCol].style.backgroundColor = "#ff5c98";
                 currentNode = prevRow + ',' + prevCol;
             }
             graph.enableClear();

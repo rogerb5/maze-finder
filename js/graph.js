@@ -41,7 +41,7 @@ export default class Graph {
         const cellIndex = row * this.gridDimension + col;
         const cell = this.cells[cellIndex];
         cell.innerText = distance;
-        cell.style.backgroundColor = "#56A3A6";
+        cell.style.backgroundColor = "#cdb4db"; // Purple color
     }
 
     setMode(mode) {
@@ -77,9 +77,9 @@ export default class Graph {
         } else if (cellType === OPEN_SPACE) {
             return "#F2E9DC";
         } else if (cellType === TARGET) {
-            return "orange";
+            return "#eb5160";
         } else if (cellType === SOURCE) {
-            return "#7BB2D9";
+            return "#a3f7b5";
         }
     }
 
