@@ -131,3 +131,14 @@ article.about-bfs {
     background-color: whitesmoke;
     padding: 1rem;
 }
+
+@media (max-width: 780px) {
+    nav.navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        margin: 0.33rem;
+    }
+}
