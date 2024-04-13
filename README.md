@@ -2,7 +2,7 @@
 
 # Project Title: Maze Path Finder
 
-This project showcases a breadth first search and depth first search on a maze. Ultimately, a `shortest path` from the start point and end point is rendered visually.
+This project showcases a breadth first search and depth first search on a maze. Ultimately, a path from the start point and end point is rendered visually.
 
  The graph is represented by an adjacency matrix but limited to (n x n) dimensions instead of (m x n). The chosen language of choice was JavaScript.
 

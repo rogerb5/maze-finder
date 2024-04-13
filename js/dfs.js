@@ -36,10 +36,11 @@ export const DFS = async (grid, startRow, startCol, graph) => {
                         visited.add(neighborPos);
                         prev[neighborPos] = [row, col];
                         await new Promise((resolve) => setTimeout(resolve, 100));
-                        graph.updateCell(row, col, distance + 1);
+                        // graph.updateCell(row, col, distance + 1);
+                        graph.updateCell(neighborRow, neighborCol, distance + 1);
                     }
                 }
             }
         }
-        }
     }
+}
