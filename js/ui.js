@@ -12,7 +12,6 @@ const bfsButton = document.querySelector('button.bfs-button');
 const aboutButton = document.querySelector('button.about');
 const aboutSection = document.querySelector('section.about');
 const closeButton = document.querySelector('button.close');
-const modalTitle = document.querySelector('h1.modal-title');
 const dfsButton = document.querySelector('button.dfs-button');
 
 // use other graphs found in graphs.txt to create different sizes of grid
@@ -57,6 +56,7 @@ closeButton.addEventListener("click", () => {
 aboutButton.addEventListener("click", () => {
     aboutSection.classList.add('active');
 });
+
 bfsButton.addEventListener("click", () => {
     if (graph.hasSource) {
         const result = BFS(graph.grid, graph.sourceRow, graph.sourceCol, graph);
@@ -65,8 +65,8 @@ bfsButton.addEventListener("click", () => {
         throw new Error('No Source Node Found!');
     }
 });
+
 dfsButton.addEventListener("click", () => {
-    console.log("Hello");
     if (graph.hasSource) {
         const result = DFS(graph.grid, graph.sourceRow, graph.sourceCol, graph);
         console.log(result);

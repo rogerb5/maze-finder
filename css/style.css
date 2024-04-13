@@ -11,6 +11,9 @@
     --component-padding: 0.7rem;
 }
 
+p.p-data {
+    font-weight: bold;
+}
 
 html,
 body {
