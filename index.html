@@ -5,14 +5,82 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Maze Path Finder</title>
+    <title>BFS/DFS Visualizer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <script src="" type="module"></script>
+
+    <nav class="navigation">
+        <h3>Maze Path Finder</h3>
+        <section class="button-section">
+            <!-- <button class="dfs-button">DFS</button> -->
+            <button class="bfs-button" id="action">BFS</button>
+        </section>
+
+        <section class="settings-button">
+            <button class="wall" id="action">Add Wall</button>
+            <button class="target" id="action">Add End Point</button>
+            <button class="source" id="action">Add Start Point</button>
+            <button class="remove" id="action">Remove</button>
+            <button class="clear" id="action">Clear Grid</button>
+            <button class="about">About</button>
+        </section>
+    </nav>
+
+
+    <section class="data">
+        <p class="p-data">The shortest path is NULL steps</p>
+    </section>
+
+    <section class="main-section">
+        <main class="graph"></main>
+    </section>
+
+    <section class="about">
+        <aside class="close-aside">
+            <h1>Maze Path Finder</h1>
+            <button class="close">Close</button>
+        </aside>
+
+        <article class="about-bfs">
+            <h3>About the visualizer:</h3>
+            <p>This visualizer depicts an adjacency matrix as the graph rendered through DOM Elements.</p>
+            <p>One core feature is the ability to custom make your own map</p>
+            <p>with walls a target, and source node with ability to erase nodes.</p>
+        </article>
+
+        <article class="about-bfs">
+            <h3>Some Facts About a Breadth First Search</h3>
+            <p>The first path found via a B.F.S. is considered the shortest path!</p>
+            <p>A B.F.S. traversal cannot find the shortest path on weighted graphs instead use Dijikstra's</p>
+            <p>The underlying data structure for a B.F.S. is a Queue.</p>
+        </article>
+
+        <article class="about-bfs">
+            <h3>Color and Visual Key:</h3>
+            <p>Beige represents the open spaces</p>
+            <p>Dark Gray showcases walls</p>
+            <p>The target node is orange</p>
+            <p>The source node is blue</p>
+            <p>The breadth-first search is aqua blue</p>
+            <p>The shortest path is denoted by violet</p>
+            <p>The steps are the numbers on the grid</p>
+        </article>
+
+        <article class="about-bfs">
+            <h3>Time Complexity:</h3>
+            <p>r = number of rows</p>
+            <p>c = number of columns</p>
+            <p>Time: O(rc)</p>
+            <p>Space: O(rc)</p>
+        </article>
+
+    </section>
+
+    <script src="js/ui.js" type="module"></script>
 </body>
 
 </html>
