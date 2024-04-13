@@ -9,9 +9,6 @@
 
 :root {
     --component-padding: 0.7rem;
-    --dark-mode-primary: black;
-    --dark-button: #3772FF;
-    --dark-button-text: whitesmoke;
 }
 
 
@@ -21,54 +18,6 @@ body {
     background-color: #bde0fe;
     /* background color */
     font-size: calc(16px + 0.4vmax);
-}
-
-/* Dark Mode Settings **********************/
-h1.modal-title.dark-mode {
-    color: whitesmoke;
-}
-
-section.about.dark-mode {
-    background-color: black;
-}
-
-article#dark-mode.dark-mode {
-    background-color: rgb(209, 207, 207);
-}
-
-.DarkMode {
-    background-color: black;
-    color: whitesmoke
-}
-
-button.close.dark-mode {
-    background-color: var(--dark-button);
-    color: var(--dark-button-text);
-}
-
-button.dark-button {
-    background-color: var(--dark-button);
-    color: var(--dark-button-text);
-}
-
-button.DarkMode {
-    background-color: var(--dark-button);
-    color: var(--dark-button-text);
-}
-
-p.p-data.dark-mode {
-    color: #FB5607;
-}
-
-article.cells.dark-mode {
-    background-color: grey;
-}
-
-button.DarkMode:hover {
-    cursor: pointer;
-    background-color: black;
-    /* hover color */
-    color: whitesmoke;
 }
 
 nav.navigation {
