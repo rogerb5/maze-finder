@@ -26,8 +26,8 @@
             <button class="source" id="action">Add Start Point</button>
             <button class="remove" id="action">Remove</button>
             <button class="clear" id="action">Clear Grid</button>
-            <button class="about">About</button>
-            <button class="DarkMode" id = "action">Dark Mode</button>
+            <button class="about" id="action">About</button>
+            <button class="DarkMode" id="action">Dark Mode</button>
         </section>
     </nav>
 
@@ -42,25 +42,25 @@
 
     <section class="about">
         <aside class="close-aside">
-            <h1>Maze Path Finder</h1>
+            <h1 class="modal-title">Maze Path Finder</h1>
             <button class="close">Close</button>
         </aside>
 
-        <article class="about-bfs">
+        <article class="about-bfs" id="dark-mode">
             <h3>About the visualizer:</h3>
             <p>This visualizer depicts an adjacency matrix as the graph rendered through DOM Elements.</p>
             <p>One core feature is the ability to custom make your own map</p>
             <p>with walls a target, and source node with ability to erase nodes.</p>
         </article>
 
-        <article class="about-bfs">
+        <article class="about-bfs" id="dark-mode">
             <h3>Some Facts About a Breadth First Search</h3>
             <p>The first path found via a B.F.S. is considered the shortest path!</p>
             <p>A B.F.S. traversal cannot find the shortest path on weighted graphs instead use Dijikstra's</p>
             <p>The underlying data structure for a B.F.S. is a Queue.</p>
         </article>
 
-        <article class="about-bfs">
+        <article class="about-bfs" id="dark-mode">
             <h3>Color and Visual Key:</h3>
             <p>Beige represents the open spaces</p>
             <p>Dark Gray showcases walls</p>
@@ -71,7 +71,7 @@
             <p>The steps are the numbers on the grid</p>
         </article>
 
-        <article class="about-bfs">
+        <article class="about-bfs" id="dark-mode">
             <h3>Time Complexity:</h3>
             <p>r = number of rows</p>
             <p>c = number of columns</p>
