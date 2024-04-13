@@ -40,7 +40,7 @@ export const BFS = async (grid, startRow, startCol, graph) => {
         }
     }
     graph.enableClear();
-    stepsReport.innerHTML = `The shortest path is 0 steps`;
+    stepsReport.innerHTML = `The path is 0 steps`;
     return -1;
 };
 

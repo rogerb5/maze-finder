@@ -43,12 +43,6 @@ export default class Graph {
         cell.innerText = distance;
         cell.style.backgroundColor = "#cdb4db"; // Purple color
     }
-    updateCellDfs(row, col, distance) {
-        const cellIndex = row * this.gridDimension + col;
-        const cell = this.cells[cellIndex];
-        cell.innerText = distance;
-
-    }
 
     setMode(mode) {
         this.mode = mode;

@@ -36,7 +36,7 @@ export const DFS = async (grid, startRow, startCol, graph) => {
                         visited.add(neighborPos);
                         prev[neighborPos] = [row, col];
                         await new Promise((resolve) => setTimeout(resolve, 100));
-                        this.updateCellDfs(row, col, i);
+                        graph.updateCell(row, col, distance + 1);
                     }
                 }
             }
