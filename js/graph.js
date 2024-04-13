@@ -153,7 +153,7 @@ export default class Graph {
         this.hasSource = false;
         this.mode = null;
         const stepsReport = document.querySelector('p.p-data');
-        stepsReport.innerHTML = `The shortest path is NULL steps`;
+        stepsReport.innerHTML = `The path is 0 steps`;
         this.updateGrid(this.grid);
         this.enableButton(this);
         this.enableAllButtons()

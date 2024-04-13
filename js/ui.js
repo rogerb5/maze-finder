@@ -58,7 +58,6 @@ aboutButton.addEventListener("click", () => {
     aboutSection.classList.add('active');
 });
 
-
 darkModeButton.addEventListener("click", () => {
     const dataOutput = document.querySelector('p.p-data');
     document.body.classList.toggle('DarkMode');

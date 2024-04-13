@@ -19,7 +19,7 @@ export const BFS = async (grid, startRow, startCol, graph) => {
                 currentNode = prevRow + ',' + prevCol;
             }
             graph.enableClear();
-            stepsReport.innerHTML = `The shortest path is ${distance} steps`;
+            stepsReport.innerHTML = `The path is ${distance} steps`;
             return distance;
         }
         const deltas = [[1, 0], [-1, 0], [0, 1], [0, -1]];
@@ -40,7 +40,7 @@ export const BFS = async (grid, startRow, startCol, graph) => {
         }
     }
     graph.enableClear();
-    stepsReport.innerHTML = `The shortest path is NULL steps`;
+    stepsReport.innerHTML = `The shortest path is 0 steps`;
     return -1;
 };
 
