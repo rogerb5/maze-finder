@@ -1,5 +1,6 @@
 import Graph from './graph.js';
 import { BFS } from './bfs.js';
+import { DFS } from './dfs.js';
 
 const wallButton = document.querySelector("button.wall");
 const targetButton = document.querySelector("button.target");
@@ -65,8 +66,9 @@ bfsButton.addEventListener("click", () => {
     }
 });
 dfsButton.addEventListener("click", () => {
+    console.log("Hello");
     if (graph.hasSource) {
-        const result = BFS(graph.grid, graph.sourceRow, graph.sourceCol, graph);
+        const result = DFS(graph.grid, graph.sourceRow, graph.sourceCol, graph);
         console.log(result);
     } else {
         throw new Error('No Source Node Found!');

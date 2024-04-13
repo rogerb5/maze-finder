@@ -1,4 +1,3 @@
-
 import Graph from "./graph.js";
 
 const stepsReport = document.querySelector('p.p-data');
