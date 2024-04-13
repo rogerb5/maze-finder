@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: system-ui;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --component-padding: 0.7rem;
+}
+
+html,
+body {
+    line-height: 1.4;
+    background-color: hsl(212, 33%, 89%);
+    font-size: calc(16px + 0.4vmax);
+}
+
+nav.navigation {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 5vh;
+}
+
+button {
+    padding: 0.8vmin 1.2vmin 0.8vmin 1.2vmin;
+    background-color: whitesmoke;
+    border: 2px solid #333;
+    font-size: 1rem;
+    transition: background-color 300ms ease;
+}
+
+button.active {
+    background-color: black;
+    color: whitesmoke;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+}
+
+section.main-section {
+    background-color: hsl(212, 33%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    min-height: 80vh;
+}
+
+section.data {
+    text-align: center;
+    color: #333;
+    padding: var(--component-padding);
+}
+
+main.graph {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size), var(--cell-size));
+    grid-template-rows: repeat(var(--grid-size), var(--cell-size));
+    background-color: #333;
+    gap: var(--cell-gap);
+    padding: var(--cell-gap);
+    height: 100%;
+}
+
+article.cell {
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+article.cell.scaledown {
+    transform: translate3d(-0.6rem, 0.6rem, 0rem);
+}
+
+article.cell.scaleup {
+    transform: translate3d(0.6rem, -0.6rem, 0rem);
+}
+
+
+article.cell:hover {
+    cursor: pointer;
+    transform: translate3d(-0.6rem, 0.6rem, 0rem);
+}
+
+fieldset {
+    display: flex;
+    padding: var(--component-padding);
+}
+
+section.about {
+    padding: var(--component-padding);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(212, 33%, 89%);
+    display: none;
+}
+
+section.about.active {
+    display: block;
+}
+
+aside.close-aside {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+article.about-bfs {
+    margin: 0.4rem;
+    border: 2px solid #333;
+    background-color: whitesmoke;
+    padding: 1rem;
+}
