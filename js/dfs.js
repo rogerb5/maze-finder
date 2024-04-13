@@ -2,7 +2,7 @@ import Graph from "./graph.js";
 
 const stepsReport = document.querySelector('p.p-data');
 // DFS 
-export const DFS = async (grid, startRow, startCol, graph) => {
+export const DFS = (grid, startRow, startCol, graph) => {
     graph.disableAllButtons(); // Disable buttons before DFS traversal
     const stack = [[startRow, startCol, 0]];
     const visited = new Set([startRow + ',' + startCol]);
@@ -18,7 +18,7 @@ export const DFS = async (grid, startRow, startCol, graph) => {
                 currentNode = prevRow + ',' + prevCol;
             }
             graph.enableClear();
-            stepsReport.innerHTML = `The shortest path is ${distance} steps`;
+            stepsReport.innerHTML = `The path is ${distance} steps`;
             return distance;
         }
         const deltas = [[1, 0], [-1, 0], [0, 1], [0, -1]];
@@ -31,7 +31,7 @@ export const DFS = async (grid, startRow, startCol, graph) => {
             if (rowInbounds) {
                 const colInbounds = 0 <= neighborCol && neighborCol < grid[0].length;
                 if (colInbounds) {
-                    if (grid[neighborRow][neighborCol] !== 'W' && !visited.has(neighborPos)) {
+                    if (grid[neighborRow][neighborCol] !== 'X' && !visited.has(neighborPos)) {
                         stack.push([neighborRow, neighborCol, distance + 1]);
                         visited.add(neighborPos);
                         prev[neighborPos] = [row, col];
