@@ -23,3 +23,6 @@ We opted to use JavaScript without a framework. Our style of programming is obje
 - The  `graphs.txt` file contains different sized grid graphs.
 
 Group Members: Roger Benjume. Evelyn Barragan.
+
+# How to launch
+Use the `live server` extension tool on `VsCode` to launch project.
