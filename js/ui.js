@@ -14,7 +14,7 @@ const aboutSection = document.querySelector('section.about');
 const closeButton = document.querySelector('button.close');
 const dfsButton = document.querySelector('button.dfs-button');
 
-// use other graphs found in graphs.txt to create different sizes of grid
+// use other graphs found in graphs.txt to create different sizes of grid!
 const defaultGrid = [
     ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"],
     ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"],

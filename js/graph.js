@@ -36,7 +36,6 @@ export default class Graph {
         return cells;
     }
 
-
     updateCell(row, col, distance) {
         const cellIndex = row * this.gridDimension + col;
         const cell = this.cells[cellIndex];

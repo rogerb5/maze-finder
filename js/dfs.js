@@ -1,9 +1,10 @@
 import Graph from "./graph.js";
 
 const stepsReport = document.querySelector('p.p-data');
+
 // DFS 
 export const DFS = async (grid, startRow, startCol, graph) => {
-    graph.disableAllButtons(); // Disable buttons before DFS traversal
+    graph.disableAllButtons();
     const stack = [[startRow, startCol, 0]];
     const visited = new Set([startRow + ',' + startCol]);
     const prev = {};

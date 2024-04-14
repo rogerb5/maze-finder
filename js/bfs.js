@@ -4,7 +4,7 @@ const stepsReport = document.querySelector('p.p-data');
 
 // BFS shortest path algorithm
 export const BFS = async (grid, startRow, startCol, graph) => {
-    graph.disableAllButtons(); // Disable buttons before BFS traversal
+    graph.disableAllButtons();
     const queue = [[startRow, startCol, 0]];
     const visited = new Set([startRow + ',' + startCol]);
     const prev = {};
@@ -43,5 +43,3 @@ export const BFS = async (grid, startRow, startCol, graph) => {
     stepsReport.innerHTML = `The path is 0 steps`;
     return -1;
 };
-
-// Maybe a DFS depth first search now?
